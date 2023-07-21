@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-
+//Xuan
+//Asfar
+//Jay Sen
 public class ResourceCentre {
 
 
@@ -231,8 +233,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 					
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())				
-					&& camcorderList.get(i).getIsAvailable() == true) {
+			String assetTag = camcorderList.get(i).getAssetTag();
+			boolean isAvailable = camcorderList.get(i).getIsAvailable();
+			if (tag.equalsIgnoreCase(assetTag)				
+					&& isAvailable == true) {
 				
 				camcorderList.get(i).setIsAvailable(false);
 				camcorderList.get(i).setDueDate(dueDate);
@@ -265,8 +269,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
-					&& chromebookList.get(i).getIsAvailable() == true) {
+			String assetTag = chromebookList.get(i).getAssetTag();
+			boolean isAvailable = chromebookList.get(i).getIsAvailable();
+			if (tag.equalsIgnoreCase(assetTag)
+					&& isAvailable == true) {
 				
 				chromebookList.get(i).setIsAvailable(false);
 				chromebookList.get(i).setDueDate(dueDate);
@@ -300,8 +306,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())
-					&& camcorderList.get(i).getIsAvailable() == false) {
+			String assetTag = camcorderList.get(i).getAssetTag();
+			boolean isAvailable = camcorderList.get(i).getIsAvailable();
+			if (tag.equalsIgnoreCase(assetTag)
+					&& isAvailable == false) {
 				camcorderList.get(i).setIsAvailable(true);
 				camcorderList.get(i).setDueDate("");
 				isReturned = true;
@@ -332,8 +340,10 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
-					&& chromebookList.get(i).getIsAvailable() == false) {
+			String assetTag = chromebookList.get(i).getAssetTag();
+			boolean isAvailable = chromebookList.get(i).getIsAvailable();
+			if (tag.equalsIgnoreCase(assetTag)
+					&& isAvailable == false) {
 				chromebookList.get(i).setIsAvailable(true);
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
