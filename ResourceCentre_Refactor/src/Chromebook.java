@@ -1,4 +1,4 @@
-//Achirapat
+//Achi
 public class Chromebook extends Item{
 	private String os;
 
