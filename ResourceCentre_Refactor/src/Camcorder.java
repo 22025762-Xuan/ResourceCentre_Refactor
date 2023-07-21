@@ -1,4 +1,4 @@
-//Achi
+//Achirapat
 public class Camcorder extends Item{
 	private int opticalZoom;
 
